@@ -1,7 +1,13 @@
-import ReactDOM from "react-dom/client";
 
+
+
+import ReactDOM from "react-dom/client";
+import {HomePage} from "./Pages/HomePage";
+import "./styles/reset.scss"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <h1>Hello world</h1>
+
+    <HomePage />
+    
   </>
 );
