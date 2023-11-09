@@ -1,15 +1,21 @@
-
 header {
   padding: 40px 60px;
   padding-bottom: 20px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(15px);
+
   .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+
     .header-logo {
       display: flex;
       align-items: center;
-      gap: 5px;
-      img{
+      gap: px;
+
+      img {
         max-width: 39px;
         max-height: 39px;
       }
@@ -23,6 +29,7 @@ header {
           font-weight: 700;
           line-height: normal;
         }
+
         h3 {
           color: var(--Grey, #adadad);
           font-family: Quicksand;
@@ -33,7 +40,122 @@ header {
         }
       }
     }
+
+    .searching-wrapper {
+      width: 455px;
+      padding: 12px;
+      display: flex;
+      flex-shrink: 0;
+
+      .search-c {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        gap: 12px;
+        border-radius: 3px;
+        background: rgb(240, 237, 237);
+
+        select {
+          background: transparent;
+          color: #253D4E;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+
+      .line {
+        height: 13px;
+        background: #ADADAD;
+        width: 1px;
+      }
+
+      input {
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+
+        ::placeholder {
+          color: #ADADAD;
+        }
+      }
+
+      button {
+        background: #3bb77e;
+        padding: 10px 15px;
+        border-radius: 3px;
+
+        img {
+          max-width: 24px;
+          max-height: 24px;
+        }
+      }
+
+
+    }
+
+    .my-counters {
+      display: flex;
+      align-items: center;
+      gap: 53px;
+
+      .counter-box {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 35px;
+          height: 40px;
+        }
+
+        .txt-wrapper {
+
+          p {
+            color: var(--BaseGreen, #3BB77E);
+            font-family: Quicksand;
+            font-size: 12px;
+            font-weight: 500;
+          }
+
+          h3 {
+            color: #000;
+            font-family: Quicksand;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+      }
+
+    }
+
+    .toggle-menu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      h3 {
+        color: var(--Black, #253D4E);
+        font-family: Quicksand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      #toggle-arrow {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
   }
-  .links-header {
-  }
+
+  .links-header {}
 }
