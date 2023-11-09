@@ -1,5 +1,4 @@
 header {
-  padding: 40px 60px;
   padding-bottom: 20px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(15px);
@@ -8,12 +7,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 53px;
+    gap: 74px;
 
     .header-logo {
       display: flex;
       align-items: center;
-      gap: px;
+      gap: 5px;
 
       img {
         max-width: 39px;
@@ -42,7 +41,7 @@ header {
     }
 
     .searching-wrapper {
-      width: 455px;
+
       padding: 12px;
       display: flex;
       flex-shrink: 0;
@@ -157,5 +156,91 @@ header {
 
   }
 
-  .links-header {}
+  .links-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-top:1px solid rgba(128, 128, 128, 0.13);
+    gap: 89px;
+    .browseAllCategory {
+      border-radius: 2px;
+      padding: 14px;
+      background: #3BB77E;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--white, #FFF);
+      font-size: 16px;
+      font-weight: 600;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    ul {
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      li {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--Black, #253D4E);
+        font-family: Quicksand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: .2s;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      :hover {
+        color: var(--BaseGreen, #3BB77E);
+        font-family: Quicksand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        img {
+          fill: #3BB77E;
+        }
+      }
+
+    }
+
+    .contact-info {
+      display: flex;
+      align-content: center;
+      gap: 15px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      p {
+        color: var(--Black, #253D4E);
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      span {
+        color: var(--BaseGreen, #3BB77E);
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
 }
