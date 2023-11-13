@@ -9,7 +9,7 @@ import home from "../../assets/img/icons/home.png";
 import hotdeals from "../../assets/img/icons/hotdeals.svg";
 import phone from "../../assets/img/icons/li_megaphone.svg";
 import call from "../../assets/img/icons/Call.svg";
-
+import percentage from "../../assets/img/icons/li_percent.svg";
 import "./style.scss";
 
 export const Header = () => {
@@ -84,8 +84,8 @@ export const Header = () => {
             Hot Deals
           </li>
 
-          <li>
-            %Promotions
+          <li><img src={percentage} alt="" />
+            Promotions
           </li>
 
           <li><img src={phone} alt="" />
