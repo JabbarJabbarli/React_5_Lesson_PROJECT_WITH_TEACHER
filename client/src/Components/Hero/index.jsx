@@ -14,12 +14,12 @@ const Hero = () => {
                     <h1>Do not miss our daily <br /> amazing deals</h1>
                     <p>Save up to 60% off on your first order</p>
                     <div className="input-wrapper">
-                      <div className="input-c">
+                        <div className="input-c">
 
-                        <img src={location} alt="" />
-                        <input type="text" placeholder='Enter your email address' />
-                      </div>
-                      
+                            <img src={location} alt="" />
+                            <input type="text" placeholder='Enter your email address' />
+                        </div>
+
                         <button>Subscribe</button>
                     </div>
                 </div>

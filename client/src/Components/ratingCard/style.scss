@@ -1,11 +1,10 @@
 .ratingCard {
     width: 216px;
-    height: 360px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 15px;
+    gap: 6px;
     border: 1px solid rgba(128, 128, 128, 0.336);
 
     .img-wrapper {
@@ -24,7 +23,6 @@
 
     .category {
         color: var(--Grey, #ADADAD);
-        margin-bottom: 7px;
         font-size: 12px;
         font-weight: 400;
     }
@@ -40,7 +38,6 @@
         display: flex;
         align-items: center;
         gap: 2px;
-        margin-bottom: 4px;
 
         img {
             width: 13px;
@@ -67,18 +64,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        
         p {
-            color: var(--Grey, #ADADAD);
-            font-size: 18px;
-            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            #currentPrice{
+                color: var(--Grey, #ADADAD);
+                font-size: 18px;
+                font-weight: 400;
+            }
 
-            span {
+            #discountLine{
+                text-decoration-line:line-through ;
                 color: var(--BaseGreen, #3BB77E);
                 font-size: 18px;
                 margin-right: 8px;
                 font-weight: 400;
             }
+
+            #beforePrice {
+                color: var(--BaseGreen, #3BB77E);
+                font-size: 18px;
+                margin-right: 8px;
+                font-weight: 400;
+            }
+
         }
 
         button {
@@ -92,7 +103,7 @@
             border-radius: 2px;
             background: var(--LightGreen, #DEF9EC);
 
-            img {}
+          
         }
     }
 }

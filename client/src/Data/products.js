@@ -1,10 +1,10 @@
-import peach from "../assets/img/pictures/products/peach.jpg"
-import image4 from "../assets/img/pictures/products/image4.svg"
-import image5 from "../assets/img/pictures/products/image5.svg"
-import image6 from "../assets/img/pictures/products/image6.svg"
-import image7 from "../assets/img/pictures/products/image7.svg"
-import image8 from "../assets/img/pictures/products/image8.svg"
-import image9 from "../assets/img/pictures/products/image9.svg"
+import peach from "../assets/img/pictures/products/exploreProducts/peach.jpg"
+import image4 from "../assets/img/pictures/products/exploreProducts/image4.svg"
+import image5 from "../assets/img/pictures/products/exploreProducts/image5.svg"
+import image6 from "../assets/img/pictures/products/exploreProducts/image6.svg"
+import image7 from "../assets/img/pictures/products/exploreProducts/image7.svg"
+import image8 from "../assets/img/pictures/products/exploreProducts/image8.svg"
+import image9 from "../assets/img/pictures/products/exploreProducts/image9.svg"
 
 
 export const products = [
@@ -35,7 +35,6 @@ export const products = [
         title: "Apple",
         stockCount: 20,
         bgColor:'red'
-
     },
     {
         id: 5,

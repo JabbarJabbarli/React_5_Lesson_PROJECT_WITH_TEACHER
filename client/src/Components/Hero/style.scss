@@ -6,9 +6,10 @@
     justify-content: space-between;
 
     .container {
-        display: flex;
-        justify-content: center;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .text-c {
             h1 {
                 color: var(--Black, #253D4E);

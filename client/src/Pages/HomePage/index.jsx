@@ -7,9 +7,7 @@ import { products } from "../../Data/products"
 import RatingCard from "../../Components/ratingCard";
 import { featuredProducts } from "../../Data/featuredProducts";
 import Hero from "../../Components/Hero";
-
-
-
+import { ShoppingCard } from "../../Components/shoppingCard";
 export const HomePage = () => {
   return (
     <div className="homePage">
@@ -39,7 +37,6 @@ export const HomePage = () => {
         </section>
       </section>
 
-
       <section className="featured">
 
         <ProductsHeading title={"Featured Products"} />
@@ -48,15 +45,8 @@ export const HomePage = () => {
           <div className="container">
             {
               featuredProducts.map(item => (
-                <RatingCard
+                <RatingCard item={item}
 
-                  img={item.img}
-                  title={item.title}
-                  name={item.name}
-                  producer={item.producer}
-                  price={item.price}
-                  discountPrice={item.discountPrice}
-                  btnImg={item.btnImg}
 
                 />
               ))
@@ -66,6 +56,7 @@ export const HomePage = () => {
         </section>
       </section>
 
+      {/* <ShoppingCard /> */}
 
 
     </div>
